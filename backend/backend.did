@@ -1,0 +1,12 @@
+service : {
+  getAboutMe: () -> (text) query;
+  getFunFacts: () -> (vec text) query;
+  getMoodMeter: () -> (nat);
+  getProjects: () -> (vec record {
+                            text;
+                            text;
+                            opt text;
+                          }) query;
+  getRandomQuote: () -> (text);
+  updateMoodMeter: (nat) -> ();
+}
